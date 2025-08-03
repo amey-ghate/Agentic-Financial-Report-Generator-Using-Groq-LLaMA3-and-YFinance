@@ -34,27 +34,38 @@ Before getting started, ensure the following are installed:
 
 *   Python 3.8 or later
     
-*   An active Groq API key (sign up at [Groq Console](https://console.groq.com/keys))
+*   An active Groq API key
     
 *   Required Python libraries (listed in requirements.txt)
     
 
-Installation
-------------
+## Installation
 
-1.  bashCopyEditgit clone https://github.com/your-username/agentic-financial-report-generator.gitcd agentic-financial-report-generator
-    
-2.  bashCopyEditpip install -r requirements.txt
-    
-3.  iniCopyEditGROQ\_API\_KEY=your\_groq\_api\_key\_here
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/agentic-financial-report-generator.gi
+   cd agentic-financial-report-generator
+    ```   
+2. Install the required Python libraries:
+   ```bash
+   pip install -r requirements.txt
+    ```   
+3. Create a .env file in the root directory and add your Groq API key:
+    ```bash
+   GROQ_API_KEY=your_groq_api_key_here
+    ```  
+---
     
 
 Usage
 -----
 
 Run the Python script:
+```bash
+   python main.py
+```
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopyEditpython main.py   `
 
 The agent will:
 
@@ -68,8 +79,9 @@ The agent will:
     
 
 To modify the company being analyzed, change the prompt in the message argument:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pythonCopyEditmessage="Write a fundamental & valuation report on MICROSOFT"   `
+```bash
+   message="Write a fundamental & valuation report on MICROSOFT"
+```
 
 File Structure
 --------------
@@ -87,8 +99,9 @@ Example Output
 --------------
 
 ### Input:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pythonCopyEditmessage="Write a fundamental & valuation report on APPLE"   `
+```bash
+   message="Write a fundamental & valuation report on APPLE"
+```
 
 ### Output:
 
@@ -113,5 +126,3 @@ Contributing
 ------------
 
 Contributions are welcome! Please fork the repo and submit a pull request if you'd like to add new features or improvements.
-
-> **Note:** This project serves as a starting point for building agentic financial analysis tools. Reports generated are based on real-time market data and language model reasoning and should be reviewed before use in professional settings.
