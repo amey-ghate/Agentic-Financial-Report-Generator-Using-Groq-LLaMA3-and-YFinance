@@ -44,7 +44,7 @@ Before getting started, ensure the following are installed:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/agentic-financial-report-generator.gi
+   git clone https://github.com/your-username/agentic-financial-report-generator.git
    cd agentic-financial-report-generator
     ```   
 2. Install the required Python libraries:
