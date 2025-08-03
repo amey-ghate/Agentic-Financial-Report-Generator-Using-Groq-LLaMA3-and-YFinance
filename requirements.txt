@@ -1,0 +1,14 @@
+# --- Core agent / model wrappers ---
+agno>=0.4.0           # includes agno.models.groq
+groq>=0.2.0           # official Groq Python SDK
+
+# --- LangChain fallback & Groq integration ---
+langchain>=0.1.15
+langchain-groq>=0.1.0
+
+# --- Data / tools ---
+yfinance>=0.2.38      # stock data helper
+python-dotenv>=1.0.1  # loads GROQ_API_KEY from .env
+
+# --- Optional niceties ---
+rich>=13.7.0          # colourful streaming logs (safe to omit)
